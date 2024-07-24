@@ -70,6 +70,9 @@
 
 @media (max-width: 425px) {
   .caixa-conteudo {
+    border: solid white;
     width: 250px;
+    height: 590px;
+    margin-top: -15%;
   }
 }

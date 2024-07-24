@@ -100,5 +100,12 @@ nav {
     .logo {
       width: 60px;
     }
+
+    ul{
+      gap: 10px;
+      li{
+        padding: 7px;
+      }
+    }
   }
 }
