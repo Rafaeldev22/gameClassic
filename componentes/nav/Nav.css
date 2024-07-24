@@ -97,8 +97,8 @@ nav {
 @media (max-width: 425px) {
   nav {
     padding: 20px;
-    .logo {
-      width: 60px;
+    .logo-classic {
+      width: 65px;
     }
 
     ul{
