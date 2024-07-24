@@ -1,0 +1,13 @@
+.box-play {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://w.wallha.com/ws/14/mDXaQ9hG.png");
+  background-position: center;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+

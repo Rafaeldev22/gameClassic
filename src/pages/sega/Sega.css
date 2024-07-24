@@ -1,0 +1,14 @@
+.box-sega{
+    width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://c.wallhere.com/photos/55/0d/silver_Sonic_Sonic_the_Hedgehog_video_game_art_PC_gaming_Sega_purple_background_black_background-2201373.jpg!d");
+  background-position: center;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+
+
