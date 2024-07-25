@@ -38,7 +38,7 @@ const jogosSega = [
   {
     id: 7,
     nome: "Teenage Mutant Ninja Turtles: The Hyperstone Heist",
-    image: "http://www.hardcoregaming101.net/tmnt/tmnt_files/tmnt-hsh-gen-cover.jpg",
+    image: "https://www.vgdb.com.br/gf/fotos/games/media_102492/teenage-mutant-ninja-turtles-the-hyperstone-heist-102492.jpg",
     url: "https://www.retrogames.cc/embed/28590-teenage-mutant-ninja-turtles-the-hyperstone-heist-usa.html",
   },
   {
