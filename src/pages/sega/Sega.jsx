@@ -1,15 +1,16 @@
 import { useState } from "react";
-import "./Sega.css"
-import "../../cssGeral/cssGeral.css"
+import "./Sega.css";
+import "../../cssGeral/cssGeral.css";
 
 import jogosSega from "../../api/jogosSega";
 
 import Nav from "../../../componentes/nav/Nav";
 import Modal from "../../../componentes/modal/Modal";
-import Container from "../../../componentes/container/Container"
+import Container from "../../../componentes/container/Container";
+
+import { motion } from "framer-motion";
 
 export default function Sega() {
-
   const [showModal, setShowModal] = useState(false);
   const [currentVideo, setCurrentVideo] = useState("");
 
@@ -32,16 +33,26 @@ export default function Sega() {
     <div className="box-sega">
       <Nav />
       <div className="caixa">
-        <div className="caixa-conteudo">
+        <motion.div
+          initial={{ x: 1000 }}
+          animate={{ x: 0 }}
+          exit={{ x: -window.innerWidth }}
+          className="caixa-conteudo"
+        >
           {jogosSega.map((item, index) => (
-              <Container key={index} image={item.image} url={() => handleOpenModal(item.url)} nome={item.nome}/>
+            <Container
+              key={index}
+              image={item.image}
+              url={() => handleOpenModal(item.url)}
+              nome={item.nome}
+            />
           ))}
-        </div>
+        </motion.div>
         <Modal
-            show={showModal}
-            onClose={handleCloseModal}
-            videoSrc={currentVideo} // Insira a URL do vídeo aqui
-          />
+          show={showModal}
+          onClose={handleCloseModal}
+          videoSrc={currentVideo} // Insira a URL do vídeo aqui
+        />
       </div>
     </div>
   );

@@ -1,12 +1,24 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <div className="conteudo-principal">
-      <div className="conteudo">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="conteudo"
+      >
         <h2 className="titulo">Seja muito Bem-vindo!</h2>
-        <p className="saudação">Bem-vindo ao portal dos jogos clássicos, Prepare-se para uma viagem nostálgica ao universo dos games que marcaram época. Reviva aventuras épicas, desafios emocionantes e a magia dos melhores jogos de todos os tempos. Clique em um dos links e comece sua jornada agora!</p>
+        <p className="saudação">
+          Bem-vindo ao portal dos jogos clássicos, Prepare-se para uma viagem
+          nostálgica ao universo dos games que marcaram época. Reviva aventuras
+          épicas, desafios emocionantes e a magia dos melhores jogos de todos os
+          tempos. Clique em um dos links e comece sua jornada agora!
+        </p>
         <div className="lista-links">
           <ul className="lista">
             <Link to="/nintendo" className="tag-link">
@@ -20,7 +32,7 @@ export default function Home() {
             </Link>
           </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
