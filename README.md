@@ -70,5 +70,5 @@ Aqui estão alguns exemplos de como navegar pelo site e acessar diferentes jogos
 - Um modal aparece ai é só clicar no botão azul e se divertir.
 
 ## Contribuidores
-- [Rafael Mewndonça](https://github.com/Rafaeldev22) - Desenvolvedor principal
+- [Rafael Mendonça](https://github.com/Rafaeldev22) - Desenvolvedor principal
 
